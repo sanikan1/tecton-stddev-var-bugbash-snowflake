@@ -10,8 +10,10 @@ import datetime
     mode='snowflake_sql',
     aggregation_interval=datetime.timedelta(1),
     aggregations=[
-        Aggregation(column='INT_VALUE', function='variance', time_window=datetime.timedelta(days=1)),
-        Aggregation(column='INT_VALUE', function='stddev', time_window=datetime.timedelta(days=1)),
+        Aggregation(column='INT_VALUE', function='var_samp', time_window=datetime.timedelta(days=1)),
+        Aggregation(column='INT_VALUE', function='stddev_samp', time_window=datetime.timedelta(days=1)),
+        Aggregation(column='INT_VALUE', function='stddev_pop', time_window=datetime.timedelta(days=1)),
+        Aggregation(column='INT_VALUE', function='stddev_pop', time_window=datetime.timedelta(days=1)),
     ],
     online=True,
     feature_start_time=datetime.datetime(2022, 5, 1),
