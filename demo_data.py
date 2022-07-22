@@ -7,7 +7,7 @@ transactions = BatchSource(
     batch_config=SnowflakeConfig(
       database="SANIKA",
       schema="PUBLIC",
-      table="TEST_TABLE",
+      table="STDDEV_VAR_TABLE",
       timestamp_field="TIMESTAMP",
     ),
 )
