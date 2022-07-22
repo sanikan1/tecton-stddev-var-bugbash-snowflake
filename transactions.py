@@ -29,6 +29,7 @@ def user_transaction_metrics(transactions):
         SELECT
             USER_ID,
             INT_VALUE,
+	    FLOAT_VALUE,
             TIMESTAMP
         FROM
             {transactions}
