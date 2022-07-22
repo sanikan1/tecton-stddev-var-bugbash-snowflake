@@ -13,7 +13,7 @@ import datetime
         Aggregation(column='INT_VALUE', function='var_samp', time_window=datetime.timedelta(days=1)),
         Aggregation(column='INT_VALUE', function='stddev_samp', time_window=datetime.timedelta(days=1)),
         Aggregation(column='INT_VALUE', function='stddev_pop', time_window=datetime.timedelta(days=1)),
-        Aggregation(column='INT_VALUE', function='stddev_pop', time_window=datetime.timedelta(days=1)),
+        Aggregation(column='INT_VALUE', function='var_pop', time_window=datetime.timedelta(days=1)),
     ],
     online=True,
     feature_start_time=datetime.datetime(2022, 5, 1),
